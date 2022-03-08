@@ -1,0 +1,11 @@
+#container {
+    position: relative;
+    top: 30px;
+    outline: 2px solid #000;
+    font-size: 0;
+    margin:auto;
+    padding: 0;
+    border: none;
+    height: 320px;
+    width: 320px;
+}
