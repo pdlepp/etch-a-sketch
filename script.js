@@ -1,14 +1,25 @@
 const container = document.querySelector("#container");
+const btn = document.querySelector('#reset');
 
 function createGrid(){
     for(let rows = 0; rows < 16; rows++) {
         for(let col = 0; col < 16; col++) {
-            const cell = document.createElement('div');
+            const cell = document.createElement('a');
             cell.setAttribute('id', 'cell');
-            cell.setAttribute('style', 'display: inline-block; outline: 1px solid #000; margin: 0; padding: 0; height: 20px; width: 20px; border:none;');
+            cell.addEventListener('mouseenter', () => {
+                cell.classList.add('addBlack');
+            });
             container.appendChild(cell);
         };
     };
 };
 
 createGrid();
+
+const cells = document.querySelectorAll('a');
+
+btn.addEventListener('click', () => {
+    cells.forEach((cell) => {
+        cell.classList.remove('addBlack');
+    });
+});

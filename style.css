@@ -1,3 +1,22 @@
+header{
+    margin: auto;
+    position: relative;
+    text-align: center;
+    font-size: 32pt;
+    color: #5DC0C7;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    background-color: #5DC0C7;
+}
+
+#fullWebsite {
+    background-color: white;
+    margin: -10px 80px -10px 80px;
+    height: 500px;
+}
+
 #container {
     position: relative;
     top: 30px;
@@ -8,4 +27,23 @@
     border: none;
     height: 320px;
     width: 320px;
+}
+
+#cell {
+    display: inline-block; 
+    outline: 1px solid #000; 
+    margin: 0; 
+    padding: 0; 
+    height: 20px; 
+    width: 20px; 
+    border:none;
+}
+
+.addBlack {
+    background-color: black;
+}
+
+#reset {
+    position:relative;
+    margin: 0px 230px;
 }
